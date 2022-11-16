@@ -22,12 +22,14 @@
     nom_Privilege VARCHAR(30) NOT NULL
  );
 
+  
   Create table PERSONNE_PHYSIQUE(
     idPersonne_Phy VARCHAR(30) NOT NULL,
     UTILISATEURidUtilisateur VARCHAR(30) NOT NULL,
     PERSONNEidPersonne VARCHAR(30) NOT NULL,
      
  );
+
 
   Create table UTILISAREUR(
     idUtilisateur VARCHAR(30) NOT NULL,
@@ -91,13 +93,6 @@
     Type_Linge_Offre VARCHAR(30) NOT NULL
  );
 
-   Create table SERVICE(
-    idService VARCHAR(30) NOT NULL,
-    nom_Service VARCHAR(30) NOT NULL,
-    PRESSINGidPressing VARCHAR(30) NOT NULL,
-    TYPE_SERVICEidTYPE_S VARCHAR(30) NOT NULL
- );
-
     Create table TYPE_SERVICE(
     idType_S VARCHAR(30) NOT NULL,
     nom_Type_Service VARCHAR(30) NOT NULL
@@ -112,6 +107,13 @@
     PRESSINGidPressing VARCHAR(30) NOT NULL
  );
 
+   Create table SERVICE(
+    idService VARCHAR(30) NOT NULL,
+    nom_Service VARCHAR(30) NOT NULL,
+    PRESSINGidPressing VARCHAR(30) NOT NULL,
+    TYPE_SERVICEidTYPE_S VARCHAR(30) NOT NULL
+ ); 
+ 
    Create table PRIX(
     PROMOOFFRESERVICEidService VARCHAR(30) NOT NULL,
     PROMOOFFRETYPE_LINGEidType_L VARCHAR(30) NOT NULL,
