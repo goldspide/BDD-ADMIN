@@ -211,6 +211,8 @@ ADD (
      , CONSTRAINT    LINGECLIENTTYPE_LINGEidType_L 
                      FOREIGN KEY (LINGECLIENTBESOINCLIENTidBesoinClient )
                      REFERENCES BESOINCLIENT (idBesoinClient )  
+
+ 
                   ) ;
     
 commit;
