@@ -47,7 +47,6 @@ ADD (
                      REFERENCES ROLE_U (PRESSINGidPressing)
     ) ;
 
-
 -- contrainte de la table PERSONNE_PHYSIQUE
 
 ALTER TABLE PERSONNE_PHYSIQUE
