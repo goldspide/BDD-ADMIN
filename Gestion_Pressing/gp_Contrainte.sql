@@ -64,7 +64,6 @@ ADD (
                      REFERENCES PERSONNE (idPersonne)
     ) ;
     
-
  -- contrainte de la table PERSONNE
 
  ALTER TABLE PERSONNE
@@ -94,7 +93,6 @@ ADD (
     ) ;
        
 -- contrainte de la table ADRESSE 
-
 
 ALTER TABLE ADRESSE
 ADD (
