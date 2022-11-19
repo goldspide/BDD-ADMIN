@@ -29,24 +29,24 @@ ADD (
      CONSTRAINT     utili_pk
                      PRIMARY KEY (idUtilisateur)
     ) ;
-    
+
 
 -- contrainte de la table PRIVILEGE
 
 ALTER TABLE PRIVILEGE
 ADD (
      CONSTRAINT      privi_pk
-                     PRIMARY KEY (idprivilege)
-    ,            
+                     PRIMARY KEY (idprivilege),            
 
      CONSTRAINT      idutili_fk
                      FOREIGN KEY (ROLEUTILISATEURidUtilisateur)
-                     REFERENCES ROLE_U (UTILISATEURidUtilisateur)
-    , CONSTRAINT     idpress_fk
+                     REFERENCES ROLE_U (UTILISATEURidUtilisateur), 
+                     
+     CONSTRAINT     idpress_fk
                      FOREIGN KEY (ROLEPRESSINGidPressing)
                      REFERENCES ROLE_U (PRESSINGidPressing)
     ) ;
-    
+
 
 -- contrainte de la table PERSONNE_PHYSIQUE
 
