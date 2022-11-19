@@ -9,7 +9,7 @@ ADD (
                      FOREIGN KEY (PRESSINGidPressing)
                      REFERENCES PRESSING (idPressing)
     ) ;
-    commit;
+    
 -- contrainte de la table PRESSING
 
 ALTER TABLE PRESSING
@@ -20,7 +20,7 @@ ADD (
                      FOREIGN KEY (UTILISATEURidUtilisateur)
                      REFERENCES UTILISATEUR (idUtilisateur)
     ) ;
-    commit;
+   
 
 -- contrainte de la table UTILISATEUR
 
@@ -29,7 +29,7 @@ ADD (
      CONSTRAINT     utili_pk
                      PRIMARY KEY (idUtilisateur)
     ) ;
-    commit;
+    
 
 -- contrainte de la table PRIVILEGE
 
@@ -46,7 +46,7 @@ ADD (
                      FOREIGN KEY (ROLEPRESSINGidPressing)
                      REFERENCES ROLE_U (PRESSINGidPressing)
     ) ;
-    commit;
+    
 
 -- contrainte de la table PERSONNE_PHYSIQUE
 
@@ -63,7 +63,7 @@ ADD (
                      FOREIGN KEY (PERSONNEidPersonne)
                      REFERENCES PERSONNE (idPersonne)
     ) ;
-    commit;
+    
 
  -- contrainte de la table PERSONNE
 
@@ -78,7 +78,7 @@ ADD (
                      REFERENCES ADRESSE (idADRESSE)
                      
     ) ;
-    commit;   
+       
  -- contrainte de la table CLIENT
 
  ALTER TABLE CLIENT
@@ -92,7 +92,7 @@ ADD (
                      REFERENCES PERSONNE (idPersonne)
 
     ) ;
-    commit;   
+       
 -- contrainte de la table ADRESSE 
 
 
@@ -101,7 +101,7 @@ ADD (
      CONSTRAINT      adresse_pk
                      PRIMARY KEY (idADRESSE)
     ) ;
-    commit;
+    
 
  -- contrainte de la table NEGOCIATION_PRESSING_CLIENT
 
@@ -115,7 +115,7 @@ ADD (
                      FOREIGN KEY (BESOINCLIENTidBesoinClient)
                      REFERENCES BESOINCLIENT (idBesoinClient)
     ) ;
-    commit;   
+       
 
   -- contrainte de la table TYPE_SERVICE
 
@@ -125,7 +125,7 @@ ADD (
                      PRIMARY KEY (idType_S)
     
     ) ;
-    commit;
+    
 
 -- contrainte de la table SERVICE
 
@@ -142,7 +142,7 @@ ADD (
                      FOREIGN KEY (TYPE_SERVICEidTYPE_S)
                      REFERENCES TYPE_SERVICE (idType_S)
     ) ;
-    commit;
+    
 
  -- contrainte de la table ANNONCE
 
@@ -159,7 +159,7 @@ ADD (
                      FOREIGN KEY (PRESSINGidPressing)
                      REFERENCES PRESSING (idPressing)
     ) ;
-    commit;
+    
 
 -- contrainte de la table PROMO
   ALTER TABLE PROMO 
@@ -179,7 +179,7 @@ ADD (
                      REFERENCES ANNONCE (idAnnonce) 
 
                      ) ;
-    commit;
+    
 
 
 

@@ -1,4 +1,3 @@
- DROP TABLE PRESSING IF EXISTS ;
  Create table PRESSING(
     idPressing  VARCHAR2(50) NOT NULL,
     Nom_Pressing  VARCHAR2(50) NOT NULL,
@@ -9,12 +8,12 @@
  );
 
  Create table PERSONNE(
+    idPersonne  VARCHAR2(50) NOT NULL,
     ADRESSEidAdresse  VARCHAR2(50) NOT NULL,
     Nom_personne  VARCHAR2(30) NOT NULL,
-    prenom_personne  VARCHAR2(50) NOT NULL,
-    email  VARCHAR2(100) NOT NULL,
-    tel_personne  VARCHAR2(30) NOT NULL
-
+    prenom_personne VARCHAR2(50) NOT NULL,
+    email VARCHAR2(50) NOT NULL,
+    tel_personne VARCHAR2(30) NOT NULL
  );
 
  Create table PRIVILEGE(
@@ -28,8 +27,7 @@
   Create table PERSONNE_PHYSIQUE(
     idPersonne_Phy VARCHAR2(30) NOT NULL,
     UTILISATEURidUtilisateur VARCHAR2(30) NOT NULL,
-    PERSONNEidPersonne VARCHAR2(30) NOT NULL
-     
+    PERSONNEidPersonne VARCHAR2(30) NOT NULL  
  );
 
 
@@ -37,14 +35,13 @@
     idUtilisateur VARCHAR2(30) NOT NULL,
     Nom_Utilisateur VARCHAR2(30) NOT NULL,
     Tel_Utilisateur VARCHAR2(30) NOT NULL
-
  );
 
   Create table CLIENT(
     idClient VARCHAR2(30) NOT NULL,
     PERSONNEidPersonne VARCHAR2(30) NOT NULL
- 
  );
+
   Create table ANNONCE(
     idAnnonce VARCHAR2(50) NOT NULL,
     description_A VARCHAR2(255) NOT NULL,
@@ -61,7 +58,6 @@
     ADRESSEidAdresseLivraison VARCHAR2(30) NOT NULL,
     ADRESSEidAdresserRamassage VARCHAR2(30) NOT NULL,
     ADRESSEidAdresseFacturation VARCHAR2(30) NOT NULL
-
  );
 
   Create table PROMO(
@@ -100,23 +96,23 @@
     nom_Type_Service VARCHAR2(30) NOT NULL
  );
 
-     Create table NEGOCIATION_PRESSING_CLIENT(
+    Create table NEGOCIATION_PRESSING_CLIENT(
     PRESSINGidPressing VARCHAR2(30) NOT NULL,
     BESOINCLIENTidBesoinClient VARCHAR2(30) NOT NULL
  );
-   Create table ROLE_U(
+    Create table ROLE_U(
     UTILISATEURidUtilisateur VARCHAR2(30) NOT NULL,
     PRESSINGidPressing VARCHAR2(30) NOT NULL
  );
 
-   Create table SERVICE(
+    Create table SERVICE(
     idService VARCHAR2(30) NOT NULL,
     nom_Service VARCHAR2(30) NOT NULL,
     PRESSINGidPressing VARCHAR2(30) NOT NULL,
     TYPE_SERVICEidTYPE_S VARCHAR2(30) NOT NULL
  ); 
  
-   Create table PRIX(
+    Create table PRIX(
     PROMOOFFRESERVICEidService VARCHAR2(30) NOT NULL,
     PROMOOFFRETYPE_LINGEidType_L VARCHAR2(30) NOT NULL,
     PROMOANNONCEidAnnonce VARCHAR2(30) NOT NULL,
