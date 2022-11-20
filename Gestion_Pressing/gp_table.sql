@@ -121,6 +121,20 @@
     Tarif_U NUMBER NOT NULL
  );
 
+     Create table ATTRIBUT(
+    Type_Servicesid_type int(11) NOT NULL,
+    couleur VARCHAR(50) NOT NULL,
+    taille int(11) NOT NULL
+ ); 
+
+     Create table VALEURS ATTRIBUT(
+    OffresServiceid_service int(11) NOT NULL,
+    nom VARCHAR(50) NOT NULL,
+    id_attribut int(11) NOT NULL,
+    Offresid_offre int(11) NOT NULL,
+   OffresType_lingesid_linge int(11) NOT NULL,
+ ); 
+
 
 
 
