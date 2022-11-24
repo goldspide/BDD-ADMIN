@@ -117,9 +117,7 @@ CONNECT gp/&pass@&connect_string
 ALTER SESSION SET NLS_LANGUAGE=American;
 ALTER SESSION SET NLS_TERRITORY=America;
 
---
 -- create tables
---
 
 @gp_table
 
@@ -129,9 +127,7 @@ ALTER SESSION SET NLS_TERRITORY=America;
 
 @gp_Constraint
 
---
 -- create indexes
---
 
 -- @C:\Users\HP\Downloads\db-sample-schemas-21.1\db-sample-schemas-21.1\Gestion_pressing\gp_idx
 
