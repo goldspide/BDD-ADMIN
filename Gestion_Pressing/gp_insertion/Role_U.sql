@@ -14,7 +14,7 @@ INSERT INTO ROLE_U
 VALUES(
     'Interprete',
     'En charge de la liason vocal entre le pressing et le client',
-    id_utilisateur.nextval,
+    ,
     id_pressing.nextval
 );
 

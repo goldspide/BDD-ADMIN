@@ -1,5 +1,5 @@
   Create table BESOINCLIENT(
-    idBesoinClient VARCHAR2(30) NOT NULL,
+    idBesoinClient VARCHAR2(30) PRIMARY KEY NOT NULL,
     budget_client VARCHAR2(30) NOT NULL,
     UTILISATEURidUtilisateur VARCHAR2(30) NOT NULL,
     CLIENTidClient VARCHAR2(30) NOT NULL,

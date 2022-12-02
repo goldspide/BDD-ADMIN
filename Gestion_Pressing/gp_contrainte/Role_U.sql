@@ -2,13 +2,13 @@
 ALTER TABLE ROLE_U
 ADD (
      CONSTRAINT     utile_fk
-                     FOREIGN KEY (UTILISATEURidUtilisateur)
+                     FOREIGN KEY (UTILISATEUR_idUtilisateur)
                      REFERENCES UTILISATEUR(idUtilisateur)
     ) ;
 ALTER TABLE ROLE_U
 ADD (
-     CONSTRAINT press_fk
-                    FOREIGN KEY (PRESSINGidPressing)
+     CONSTRAINT presse_fk
+                    FOREIGN KEY (PRESSING_idPressing)
                     REFERENCES PRESSING (idPressing)
     ); 
     commit;

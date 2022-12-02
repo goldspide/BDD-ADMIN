@@ -1,14 +1,8 @@
 ------------ contrainte de la table PRESSING --------------
-
-ALTER TABLE PRESSING
-ADD (
-     CONSTRAINT     press_pk
-                     PRIMARY KEY (idPressing)
-    ) ;
 ALTER TABLE PRESSING
 ADD (
      CONSTRAINT     press_fk
-                     FOREIGN KEY (UTILISATEURidUtilisateur)
+                     FOREIGN KEY (UTILISATEUR_idUtilisateur)
                      REFERENCES UTILISATEUR (idUtilisateur)
     );
      commit;

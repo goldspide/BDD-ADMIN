@@ -58,13 +58,13 @@ PROMPT specify password for gp as parameter 1:
 DEFINE pass     = gp
 PROMPT 
 PROMPT specify default tablespeace for gp as parameter 2:
-DEFINE tbs      = user
+DEFINE tbs      = users
 PROMPT 
 PROMPT specify temporary tablespace for gp as parameter 3:
 DEFINE ttbs     = temp
 PROMPT 
 PROMPT specify password for SYS as parameter 4:
-DEFINE pass_sys = 32003
+DEFINE pass_sys = gp
 PROMPT 
 PROMPT specify log path as parameter 5:
 DEFINE log_path = C:\Gestion_Pressing\gp_main
@@ -99,8 +99,10 @@ ALTER USER gp DEFAULT TABLESPACE &tbs
 
 ALTER USER gp TEMPORARY TABLESPACE &tbs;
 
-GRANT CREATE SESSION, CREATE VIEW, ALTER SESSION, CREATE SEQUENCE TO gp;
-GRANT CREATE SYNONYM, CREATE DATABASE LINK, RESOURCE , UNLIMITED TABLESPACE TO gp;
+GRANT ALL PRIVILEGES TO gp;
+
+-- GRANT CREATE SESSION, CREATE VIEW, ALTER SESSION, CREATE SEQUENCE TO gp;
+-- GRANT CREATE SYNONYM, CREATE DATABASE LINK, RESOURCE , UNLIMITED TABLESPACE TO gp;
 
 REM =======================================================
 REM grants from sys schema
@@ -117,15 +119,72 @@ CONNECT gp/&pass@&connect_string
 ALTER SESSION SET NLS_LANGUAGE=American;
 ALTER SESSION SET NLS_TERRITORY=America;
 
--- create tables
+-------------------- create de la table Adresse --------------------------
+@gp_table/Adresse
+-------------------- create de la table Annonce --------------------------
+@gp_table/Annonce
+-------------------- create de la table Attributs --------------------------
+@gp_table/Attributs
+-------------------- create de la table Besoinclient --------------------------
+@gp_table/Besoinclient
+-------------------- create de la table Client --------------------------
+@gp_table/Client
+-------------------- create de la tableLingeClient --------------------------
+@gp_table/LingeClient
+-------------------- create de la table Negociation_Pressing_Client --------------------------
+@gp_table/Negociation_Pressing_Client
+-------------------- create de la table Offre --------------------------
+@gp_table/Offre
+-------------------- create de la table Personne_Physique --------------------------
+@gp_table/Personne_Physique
+-------------------- create de la table Personne --------------------------
+@gp_table/Personne
+-------------------- create de la table Pressing --------------------------
+@gp_table/Pressing
+-------------------- create de la table Privilege --------------------------
+@gp_table/Privilege
+-------------------- create de la table Prix --------------------------
+@gp_table/Prix
+-------------------- create de la table Promo --------------------------
+@gp_table/Promo
+-------------------- create de la table Role_U --------------------------
+@gp_table/Role_U
+-------------------- create de la table Service --------------------------
+@gp_table/Service
+-------------------- create de la table Type_linge --------------------------
+@gp_table/Type_linge
+-------------------- create de la table Utilisateur --------------------------
+@gp_table/Utilisateur
+-------------------- create de la table Valeur_Attributs --------------------------
+@gp_table/Valeur_Attributs
 
-@gp_table
 
--- 
--- create constraint
---
+------------------------------ create des constraint de la table Annonce --------------------------------
+@gp_Contrainte/Annonce
+------------------------------ create des constraint de la table Pressing --------------------------------
+@gp_Contrainte/Pressing
+------------------------------ create des constraint de la table Privilege --------------------------------
+@gp_Contrainte/Privilege
+------------------------------ create des constraint de la table Role_U --------------------------------
+@gp_Contrainte/Role_U
+------------------------------ create des constraint de la table Utilisateur --------------------------------
+@gp_Contrainte/Utilisateur
+------------------------------ create des constraint de la table Negociation_Pressing_client --------------------------------
+@gp_Contrainte/Negociation_pressing_client
 
-@gp_Constraint
+--------------------------------insertion dans la table Utilisateur------------------------------------------
+@gp_insertion/Utilisateur
+
+select * from utilisateur;
+
+
+
+
+
+
+
+
+-- @gp_Constraint
 
 -- create indexes
 

@@ -1,20 +1,14 @@
 ------------ contrainte de la table PRIVILEGE  -------------
-
-ALTER TABLE PRIVILEGE
-ADD (
-     CONSTRAINT      privi_pk
-                     PRIMARY KEY (idprivilege)
-    ) ;
 ALTER TABLE PRIVILEGE
 ADD (
      CONSTRAINT      idutili_fk
-                     FOREIGN KEY (ROLEUTILISATEURidUtilisateur)
-                     REFERENCES ROLE_U (UTILISATEURidUtilisateur)
+                     FOREIGN KEY (ROLE_UTILISATEUR_idUtilisateur)
+                     REFERENCES ROLE_U(UTILISATEUR_idUtilisateur)
      );                     
 ALTER TABLE PRIVILEGE
 ADD (
      CONSTRAINT     idpress_fk
-                     FOREIGN KEY (ROLEPRESSINGidPressing)
-                     REFERENCES ROLE_U (PRESSINGidPressing)
+                     FOREIGN KEY (ROLE_PRESSING_idPressing)
+                     REFERENCES ROLE_U(PRESSING_idPressing)
     );
     commit;                 
