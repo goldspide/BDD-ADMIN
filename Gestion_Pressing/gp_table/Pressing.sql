@@ -5,7 +5,7 @@
     Localisation_Pressing  VARCHAR2(50) NOT NULL,
     UTILISATEUR_idUtilisateur VARCHAR2(50) NOT NULL,
     Heure_Ouverture  timestamp NOT NULL,
-    Heure_Fermeture  timestamp NULL
+    Heure_Fermeture  timestamp NOT NULL
  );
 
 
