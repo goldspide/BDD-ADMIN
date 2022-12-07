@@ -1,95 +1,95 @@
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    5,
+    6
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    8,
+    6
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    4,
+    6
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    9,
+    6
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    6,
+    4
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    7,
+    6
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
-    idpressing.nextval,
-    id_besoin.nextval
-);
-
-INSERT INTO NEGOCIATION_PRESSING_CLIENT
-VALUES(
-    id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    1,
+    9
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
-);
-
-INSERT INTO NEGOCIATION_PRESSING_CLIENT
-VALUES(
-    idpressing.nextval,
-    id_besoin.nextval
-);
-
-INSERT INTO NEGOCIATION_PRESSING_CLIENT
-VALUES(
-    idpressing.nextval,
-    id_besoin.nextval
+    2,
+    8
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    5,
+    2
+);
+
+INSERT INTO NEGOCIATION_PRESSING_CLIENT
+VALUES(
+    6,
+    3
+);
+
+INSERT INTO NEGOCIATION_PRESSING_CLIENT
+VALUES(
+    8,
+    4
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    4,
+    5
 );
 
 INSERT INTO NEGOCIATION_PRESSING_CLIENT
 VALUES(
     id_nego.nextval,
-    idpressing.nextval,
-    id_besoin.nextval
+    6,
+    6
+);
+
+INSERT INTO NEGOCIATION_PRESSING_CLIENT
+VALUES(
+    id_nego.nextval,
+    5,
+    8
 );
 commit;

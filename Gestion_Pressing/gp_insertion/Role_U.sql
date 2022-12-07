@@ -11,74 +11,82 @@ INCREMENT BY 1
 CACHE 50;
 
 INSERT INTO ROLE_U
-VALUES(
+VALUES( id_rol.nextval,
     'Interprete',
     'En charge de la liason vocal entre le pressing et le client',
-    ,
-    id_pressing.nextval
+    8,
+    3
+);
+
+INSERT INTO ROLE_U
+VALUES( 
+    id_rol.nextval,
+    'Interprete',
+    'En charge de la liason vocal entre le pressing et le client',
+    1,
+    4
 );
 
 INSERT INTO ROLE_U
 VALUES(
+    id_rol.nextval, 
     'Interprete',
     'En charge de la liason vocal entre le pressing et le client',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    2,
+    5
 );
 
 INSERT INTO ROLE_U
 VALUES(
-    'Interprete',
-    'En charge de la liason vocal entre le pressing et le client',
-    id_utilisateur.nextval,
-    id_pressing.nextval
-);
-
-INSERT INTO ROLE_U
-VALUES(
+    id_rol.nextval,
     'Maintenancier',
     'En charge de la proprete des machine de travail',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    3,
+    8
 );
 
 INSERT INTO ROLE_U
 VALUES(
+    id_rol.nextval,
     'Caissier',
     'En charge de la collecte des fond apres service rendu',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    2,
+    7
 );
 
 INSERT INTO ROLE_U
 VALUES(
+    id_rol.nextval,
     'Gardien',
     'En charge de la securisation des machine de travail',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    4,
+    9
 );
 
 INSERT INTO ROLE_U
 VALUES(
+    id_rol.nextval,
     'manager',
     'En charge de la coordination etre les different unite du pressing ',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    5,
+    2
 );
 
 INSERT INTO ROLE_U
 VALUES(
+    id_rol.nextval,
     'menagere',
     'En charge de la propete du pressing',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    6,
+    3
 );
 
 INSERT INTO ROLE_U
 VALUES(
+    id_rol.nextval,
     'Rangeur',
     'En charge du pliage et du repasaga des vetement',
-    id_utilisateur.nextval,
-    id_pressing.nextval
+    7,
+    4
 );
 commit;

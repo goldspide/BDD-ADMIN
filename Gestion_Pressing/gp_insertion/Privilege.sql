@@ -1,91 +1,72 @@
-CREATE SEQUENCE id_utilisateur
-MINVALUE 1
-START WITH 1
-INCREMENT BY 1
-CACHE 50;
-
-CREATE SEQUENCE id_pressing
-MINVALUE 1
-START WITH 1
-INCREMENT BY 1
-CACHE 50;
-
-CREATE SEQUENCE id_incre
-MINVALUE 1
-START WITH 1
-INCREMENT BY 1
-CACHE 50;
-
-
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Responsable'  
+    id_privi.nextval,
+    'Responsable',
+    8,
+    9  
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Manager'  
+    id_privi.nextval,
+    'Manager',  
+    7,
+    6
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'administrateur'  
+    id_privi.nextval,
+    'administrateur',
+    5,
+    7
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Controleur'  
+    id_privi.nextval,
+    'Controleur',
+    6,
+    4  
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Formateur'  
+    id_privi.nextval,
+    'Formateur',
+    5,
+    5  
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Maintenacier'  
+    id_privi.nextval,
+    'Maintenacier',
+    4,
+    7  
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Securite'  
+    id_privi.nextval,
+    'Securite',
+    8,
+    9  
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Courcier'  
+    id_privi.nextval,
+    'Courcier',
+    2,
+    3  
 );
 
 INSERT INTO PRIVILEGE
 VALUES(
-    id_utilisateur.nextval,
-    id_pressing.nextval,
-    id_incre.nextval,
-    'Receptioniste'  
+    id_privi.nextval,
+    'Receptioniste',
+    6,
+    8  
 );
 commit;
