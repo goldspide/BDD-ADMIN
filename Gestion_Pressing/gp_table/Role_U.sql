@@ -4,7 +4,7 @@
     DESCRIPTION VARCHAR2(200) NOT NULL,
     UTILISATEUR_idUtilisateur VARCHAR2(30)  NOT NULL,
     PRESSING_idPressing VARCHAR2(30)  NOT NULL,
-    PRIMARY KEY(IdRole_U,UTILISATEUR_idUtilisateur,PRESSING_idPressing)
+    CONSTRAINT Cle_primaire PRIMARY KEY(IdRole_U,UTILISATEUR_idUtilisateur,PRESSING_idPressing)
  );
 
 
