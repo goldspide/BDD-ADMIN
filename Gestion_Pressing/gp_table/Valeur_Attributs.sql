@@ -1,4 +1,5 @@
 Create table Valeur_Attributs(
+    id_ValeurAttribut NUMBER NOT NULL PRIMARY KEY (id_ValeurAttribut)
     OFFRE_SERVICE_IDSERVIE NUMBER NOT NULL,
     NOM  VARCHAR2(50),
     ID_ATTRIBUT  NUMBER NOT NULL,
