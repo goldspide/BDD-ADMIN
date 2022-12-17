@@ -132,7 +132,7 @@ INSERT INTO Type_Linge
 VALUES(
     idType_L,
     'linge plat',
-    'taie d'oreiller'
+    'taie pour oreiller'
 ); 
 
 INSERT INTO Type_Linge
@@ -184,7 +184,7 @@ INSERT INTO Type_Linge
 VALUES(
     idType_L,
     'linge petite enfance',
-    'tapis d'eveil'
+    'tapis de eveil'
 ); 
 INSERT INTO Type_Linge
 VALUES(
