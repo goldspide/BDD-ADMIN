@@ -67,101 +67,101 @@ CONNECT gp/gp
 ALTER SESSION SET NLS_LANGUAGE=American;
 ALTER SESSION SET NLS_TERRITORY=America;
 
-prompt****************************Creattion de la table Adresse********************************
+prompt****************************Creation de la table Adresse********************************
 -------------------- create de la table Adresse --------------------------
 @gp_table/Adresse
 
-prompt****************************Creattion de la table Annonce********************************
+prompt****************************Creation de la table Annonce********************************
 -------------------- create de la table Annonce --------------------------
 @gp_table/Annonce
 
-prompt****************************Creattion de la table Attributs********************************
+prompt****************************Creation de la table Attributs********************************
 -------------------- create de la table Attributs --------------------------
 @gp_table/Attributs
 
-prompt****************************Creattion de la table Besoinclient********************************
+prompt****************************Creation de la table Besoinclient********************************
 -------------------- create de la table Besoinclient --------------------------
 @gp_table/Besoinclient
 
-prompt****************************Creattion de la table Client********************************
+prompt****************************Creation de la table Client********************************
 -------------------- create de la table Client --------------------------
 @gp_table/Client
 
-prompt****************************Creattion de la table LingeClient********************************
+prompt****************************Creation de la table LingeClient********************************
 -------------------- create de la tableLingeClient --------------------------
 @gp_table/LingeClient
 
-prompt****************************Creattion de la table Negociation_Pressing_Client********************************
+prompt****************************Creation de la table Negociation_Pressing_Client********************************
 -------------------- create de la table Negociation_Pressing_Client --------------------------
 @gp_table/Negociation_Pressing_Client
 
-prompt****************************Creattion de la table Offre********************************
+prompt****************************Creation de la table Offre********************************
 -------------------- create de la table Offre --------------------------
 @gp_table/Offre
 
-prompt****************************Creattion de la table Personne_Physique********************************
+prompt****************************Creation de la table Personne_Physique********************************
 -------------------- create de la table Personne_Physique --------------------------
 @gp_table/Personne_Physique
 
-prompt****************************Creattion de la table Personne*******************************
+prompt****************************Creation de la table Personne*******************************
 -------------------- create de la table Personne --------------------------
 @gp_table/Personne
 
-prompt****************************Creattion de la table Pressing*******************************
+prompt****************************Creation de la table Pressing*******************************
 -------------------- create de la table Pressing --------------------------
 @gp_table/Pressing
 
-prompt****************************Creattion de la table Privilege********************************
+prompt****************************Creation de la table Privilege********************************
 -------------------- create de la table Privilege --------------------------
 @gp_table/Privilege
 
-prompt****************************Creattion de la table Prix********************************
+prompt****************************Creation de la table Prix********************************
 -------------------- create de la table Prix --------------------------
 @gp_table/Prix
 
-prompt****************************Creattion de la table Promo********************************
+prompt****************************Creation de la table Promo********************************
 -------------------- create de la table Promo --------------------------
 @gp_table/Promo
 
-prompt****************************Creattion de la table Role_U********************************
+prompt****************************Creation de la table Role_U********************************
 -------------------- create de la table Role_U --------------------------
 @gp_table/Role_U
 
-prompt****************************Creattion de la table Service********************************
+prompt****************************Creation de la table Service********************************
 -------------------- create de la table Service --------------------------
 @gp_table/Service
 
-prompt****************************Creattion de la table Type_linge********************************
+prompt****************************Creation de la table Type_linge********************************
 -------------------- create de la table Type_linge --------------------------
 @gp_table/Type_linge
 
-prompt****************************Creattion de la table Utilisateur********************************
+prompt****************************Creation de la table Utilisateur********************************
 -------------------- create de la table Utilisateur --------------------------
 @gp_table/Utilisateur
 
-prompt****************************Creattion de la table Attributs********************************
+prompt****************************Creation de la table Attributs********************************
 -------------------- create de la table Valeur_Attributs --------------------------
 @gp_table/Valeur_Attributs
 
 
-prompt****************************Creattion de la Contraint Annonce *******************************
+prompt****************************Creation de la Contraint Annonce *******************************
 ------------------------------ create des constraint de la table Annonce --------------------------------
 @gp_Contrainte/Annonce
-prompt****************************Creattion de la Contraint Attributs********************************
+prompt****************************Creation de la Contraint Attributs********************************
 ------------------------------ create des constraint de la Attributs
-prompt****************************Creattion de la Contraint Privilege ********************************
+prompt****************************Creation de la Contraint Privilege ********************************
 ------------------------------ create des constraint de la table Privilege --------------------------------
 @gp_Contrainte/Privilege
-prompt****************************Creattion de la Contrant Role_U ********************************
+prompt****************************Creation de la Contrant Role_U ********************************
 ------------------------------ create des constraint de la table Role_U --------------------------------
 @gp_Contrainte/Role_U
-prompt****************************Creattion de la Contraint Utilisateur********************************
+prompt****************************Creation de la Contraint Utilisateur********************************
 ------------------------------ create des constraint de la table Utilisateur --------------------------------
 @gp_Contrainte/Utilisateur
-prompt****************************Creattion de la Contraint Negociation_Pressing_client*******************************
+prompt****************************Creation de la Contraint Negociation_Pressing_client*******************************
 ------------------------------ create des constraint de la table Negociation_Pressing_client --------------------------------
 @gp_Contrainte/Negociation_pressing_client
-prompt****************************Creattion de la Containt Utilisateur********************************
+prompt****************************Creation de la Containt Utilisateur********************************
 --------------------------------insertion dans la table Utilisateur------------------------------------------
 @gp_insertion/Utilisateur
 
