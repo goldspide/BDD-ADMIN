@@ -119,3 +119,9 @@ INSERT INTO SERVICE VALUES(
     12,
     10
 );
+INSERT INTO SERVICE VALUES(
+    idService.nextval,
+    "Blanchisserie",
+    2,
+    20
+);
